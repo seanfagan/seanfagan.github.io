@@ -22,105 +22,135 @@
   </head>
   <body>
 
-    <h1 class="text-center display">Sean Fagan</h1>
+    <h1 class="text-center my-name">Page Title</h1>
     <hr class="fancy-line"/>
 
     <section id="about">
     	<div class="container">
     		<div class="row">
     			<div class="col-md-4 col-md-offset-4">
-    				<p class="">
+    				<p>
     					Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for a different Texas university, and keeps himself busy with a handful of side projects.
     				</p>
     			</div>
-    		</div>
+    		</div> <!-- end of row -->
     	</div>
     </section> <!-- end of About -->
 
     <section id="experience">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-12">
+    			<div id="work" class="col-md-6">
 
-            <div class="text-center">
-              <h2 class="text-center glyphicon glyphicon-briefcase" title="Work experience"></h2>
-            </div>
+            <h2>Work</h2>
 
-  					<div class="jobs list-group">
+  					<div class="panel list-group">
 
-  						<a data-toggle="collapse" href="#job1-meta" class="job list-group-item">
-  						  <header>
-  						    <h3 class="title">Software Developer</h3>
-  						    <h4 class="location">The University of Texas at Austin</h4>
-  						  </header>
-
-  						  <div id="job1-meta" class="meta collapse">
-  						    <span>October 2015 – Present</span>
-  						    <span>Austin, Texas</span>
-                  <p class="description">
-                    Web development with Python / Django and maintenance of Oracle and Mainframe databases.
-                  </p>
+              <div class="exp-entry">
+                <a href="#job-ut-sd" class="list-group-item" data-toggle="collapse">
+                  Software Developer - The University of Texas at Austin
+                </a>
+                <div id="job-ut-sd" class="collapse">
+                  <div class="exp-details">
+                    <span>October 2015 – Present</span>
+    						    <span>Austin, Texas</span>
+                    <p class="description">
+                      Web development with Python / Django and maintenance of Oracle and Mainframe databases.
+                    </p>
+                  </div>
   						  </div>
-  						</a> <!-- end of Job -->
+              </div> <!-- end of Exp Entry -->
 
-              <a data-toggle="collapse" href="#job2-meta" class="job list-group-item">
-                <header>
-                  <h3 class="title">Instructor</h3>
-                  <h4 class="location">Digital Media Academy</h4>
-                </header>
-                
-                <div id="job2-meta" class="meta collapse">
-                  <span>May 2015 – August 2015</span>
-                  <span class="text-muted">Austin, Texas</span>
-                  <p class="description">
-                    Teach high school level courses on programming in Java and C# for creating games and generative art.
-                  </p>
+              <div class="exp-entry">
+                <a href="#job-dma" class="list-group-item" data-toggle="collapse">
+                  Instructor - Digital Media Academy
+                </a>
+                <div id="job-dma" class="collapse">
+                  <div class="exp-details">
+                    <span>May 2015 – August 2015</span>
+                    <span>Austin, Texas</span>
+                    <p class="description">
+                      Teach high school level courses on programming in Java and C# for creating games and generative art.
+                    </p>
+                  </div>
                 </div>
-              </a> <!-- end of Job -->
+              </div> <!-- end of Exp Entry -->
 
-              <a data-toggle="collapse" href="#job3-meta" class="job list-group-item">
-                <header>
-                  <h3 class="title">CS Outreach Instructor</h3>
-                  <h4 class="location">The University of Texas at Dallas</h4>
-                </header>
-                
-                <div id="job3-meta" class="meta collapse">
-                  <span>April 2014 – May 2015</span>
-                  <span class="text-muted">Dallas, Texas</span>
-                  <p class="description">
-                    Teach junior high level courses on learning how to program via A.L.I.C.E and GameMaker.
-                  </p>
+              <div class="exp-entry">
+                <a href="#job-utd" class="list-group-item" data-toggle="collapse">
+                  CS Outreach Instructor - The University of Texas at Dallas
+                </a>
+                <div id="job-utd" class="collapse">
+                  <div class="exp-details">
+                    <span>April 2014 – May 2015</span>
+                    <span>Dallas, Texas</span>
+                    <p class="description">
+                      Teach junior high level courses on learning how to program via A.L.I.C.E and GameMaker.
+                    </p>
+                  </div>
                 </div>
-              </a> <!-- end of Job -->
+              </div> <!-- end of Exp Entry -->
 
-              <a data-toggle="collapse" href="#job4-meta" class="job list-group-item">
-                <header>
-                  <h3 class="title">QA Tester</h3>
-                  <h4 class="location">Aspyr Media</h4>
-                </header>
-                
-                <div id="job4-meta" class="meta collapse">
-                  <span>May 2013 – August 2013</span>
-                  <span class="text-muted">Austin, Texas</span>
-                  <p class="description">
-                    Tester on such titles as Bioshock: Infinite, Civilization V, and Borderlands 2.
-                  </p>
+              <div class="exp-entry">
+                <a href="#job-aspyr" class="list-group-item" data-toggle="collapse">
+                  QA Tester - Aspyr Media
+                </a>
+                <div id="job-aspyr" class="collapse">
+                  <div class="exp-details">
+                    <span>May 2013 – August 2013</span>
+                    <span>Austin, Texas</span>
+                    <p class="description">
+                      Tester on such titles as Bioshock: Infinite, Civilization V, and Borderlands 2.
+                    </p>
+                  </div>
                 </div>
-              </a> <!-- end of Job -->
+              </div> <!-- end of Exp Entry -->
 
   					</div>
-  				</div>
-  			</div>
+  				</div> <!-- end of Work column -->
+
+          <div id="education" class="col-md-6">
+
+            <h2>Education</h2>
+
+            <div class="panel list-group">
+
+              <div class="exp-entry">
+                <a href="#edu-utd" class="list-group-item" data-toggle="collapse">
+                  <span class="glyphicon glyphicon-education"></span>
+                  B.A. Arts and Technology - The University of Texas at Dallas
+                </a>
+                <div id="edu-utd" class="collapse">
+                  <div class="exp-details">
+                    <span>August 2012 – May 2015</span>
+                    <span>Dallas, Texas</span>
+                    <p class="description">
+                      Focus in game design and user experience/interaction design.<br/> Member of Game Production Lab and Tau Sigma NHS.
+                    </p>
+                  </div>
+                </div>
+              </div> <!-- end of Exp Entry -->
+
+              <div class="exp-entry">
+                <a href="#edu-unt" class="list-group-item" data-toggle="collapse">
+                  Music Composition - The University of North Texas
+                </a>
+                <div id="edu-unt" class="collapse">
+                  <div class="exp-details">
+                    <span>August 2010 – May 2012</span>
+                    <span>Denton, Texas</span>
+                    <p class="description">
+                      Member of Composers Forum. Transferred before completing degree.
+                    </p>
+                  </div>
+                </div>
+              </div> <!-- end of Exp Entry -->
+
+            </div>
+          </div> <!-- end of Education column -->
+  			</div> <!-- end of row -->
   		</div>
   	</section> <!-- end of Experience -->
-
-
-<!-- Instructor
-
-QA Tester
-Aspyr Media
-May 2013 - August 2013
-Austin, TX -->
 
 
     <section class="portfolio">
