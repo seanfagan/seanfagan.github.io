@@ -10,10 +10,12 @@ body {
 
 a {
 	font-family: 'Raleway', serif;
+  color: #233d4d;
 }
 
 a:hover {
 	color: #eb5055;
+  text-decoration: none;
 }
 
 h1.display {
@@ -24,14 +26,21 @@ h1.display {
 /* ***************
    Work experience
    *************** */
-li.job {
-	overflow: hidden;
-	border-bottom: 1px solid #d0d0d0;
+a.list-group-item:hover, a.list-group-item:focus {
+  background: #efece5;
+  color: #000;
+  border: none;
 }
 
-li.job div.job-meta span ~ span {
+a.list-group-item {
+  background: #fffcf5;
+  color: #565554;
+  border: none;
+}
+
+div.meta span ~ span {
     margin-left: 5px;
-    border-left: 1px solid #bbb;
+    border-left: 1px solid #565554;
     padding-left: 5px;
 }
 
@@ -43,7 +52,7 @@ li.job div.job-meta span ~ span {
 }
 
 .portfolio-sorting li a {
-	color: #808080;
+	color: #565554;
 	text-decoration: none;
 	padding: 6px;
 }
@@ -55,7 +64,7 @@ li.job div.job-meta span ~ span {
 
 .portfolio-item {
 	padding: .5em;
-	border-bottom: 1px solid #d0d0d0;
+	border-bottom: 1px solid #565554;
 }
 
 /* **********
