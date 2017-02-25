@@ -42,17 +42,15 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 
 div.exp-details {
-  padding: 10px 15px;
-  background: #565554;
-  color: #fffcf5;
-  box-shadow: 0 -5px 0 0 #eb5055 inset;
-  border-top: 5px #817f82 solid;
+  padding: 5px 20px 1px 20px;
+  margin: 5px 0 15px 20px;
+  border-left: 1px dashed #ccc;
 }
 
 div.exp-details span ~ span {
     margin-left: 5px;
-    border-left: 1px solid #afaca5;
-    color: #afaca5;
+    border-left: 1px solid #8f8c85;
+    color: #8f8c85;
     padding-left: 5px;
 }
 
