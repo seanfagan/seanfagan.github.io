@@ -1,3 +1,20 @@
+var $root = $('html, body');
+$('a.project').click(function() {
+  var href = $.attr(this, 'href'),
+      $myProject = $(href),
+      $projects = $('.showcase');
+
+  // Animate scrolling to showcase
+  $root.animate({
+      scrollTop: $('#project-showcase').offset().top
+  }, 200);
+
+  // Hide other projects, reveal chosen project
+  $projects.not($myProject).addClass("hidden");
+  $myProject.removeClass("hidden");
+  return false;
+});
+
 var shuffleme = (function( $ ) {
   'use strict';
   var $grid = $('#grid'), //locate what we want to sort 
@@ -19,7 +36,6 @@ var shuffleme = (function( $ ) {
     });
   },
 
-  // Set up button clicks
   setupFilters = function() {
     var $btns = $filterOptions.children();
     $btns.on('click', function(e) {
@@ -28,11 +44,10 @@ var shuffleme = (function( $ ) {
           isActive = $this.hasClass( 'active' ),
           group = isActive ? 'all' : $this.data('group');
 
-      // Hide current label, show current label in title
+      // Change which link is active
       if ( !isActive ) {
         $('.portfolio-sorting li a').removeClass('active');
       }
-
       $this.toggleClass('active');
 
       // Filter elements
@@ -42,16 +57,11 @@ var shuffleme = (function( $ ) {
     $btns = null;
   },
 
-  // Re layout shuffle when images load. This is only needed
-  // below 768 pixels because the .picture-item height is auto and therefore
-  // the height of the picture-item is dependent on the image
-  // I recommend using imagesloaded to determine when an image is loaded
-  // but that doesn't support IE7
   listen = function() {
     var debouncedLayout = $.throttle( 300, function() {
       $grid.shuffle('update');
     });
-  };      
+  };
 
   return {
     init: init

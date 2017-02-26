@@ -153,11 +153,12 @@
   	</section> <!-- end of Experience -->
 
 
-    <section class="portfolio">
+    <section class="portfolio jumbotron">
       <div class="container">
-        <div class="row">
+
+        <div class="row align-row-bottom">
           <div class="col-md-6">
-            <h2>Projects...</h2>
+            <h2>Projects</h2>
           </div>
           <div class="col-md-6 align-right">
             <ul class="portfolio-sorting list-inline">
@@ -165,7 +166,7 @@
               <li><a href="#" data-group="web" class="text-uppercase">Web</a></li>
               <li><a href="#" data-group="games" class="text-uppercase">Games</a></li>
               <li><a href="#" data-group="music" class="text-uppercase">Music</a></li>
-            </ul> <!--end portfolio sorting -->
+            </ul> <!--end of Portfolio Sorting -->
           </div>
         </div> <!-- end of row -->
 
@@ -174,7 +175,7 @@
 
             <li class="col-md-12" data-groups='["web"]'>
                 <figure class="portfolio-item">
-                    <a href="#">
+                    <a href="#intersource" class="project">
                         intersource
                     </a>
                 </figure>
@@ -182,7 +183,7 @@
 
            <li class="col-md-12" data-groups='["games"]'>
               <figure class="portfolio-item">
-                  <a href="#">
+                  <a href="#push-and-pull" class="project">
                       push and pull
                   </a>
               </figure>
@@ -190,7 +191,7 @@
 
             <li class="col-md-12" data-groups='["games", "music"]'>
               <figure class="portfolio-item">
-                  <a href="#">
+                  <a href="#qubit" class="project">
                       qubit
                   </a>
               </figure>
@@ -198,7 +199,7 @@
 
             <li class="col-md-12" data-groups='["music"]'>
               <figure class="portfolio-item">
-                  <a href="#">
+                  <a href="#project-showcase" class="project">
                       sleepy fish
                   </a>
               </figure>
@@ -208,14 +209,42 @@
             <li class="col-md-12 shuffle_sizer"></li>
 
           </ul> <!--end portfolio grid -->
+        </div> <!--end of row -->
 
-          </div> <!--end row -->
-        </div> <!-- end container-->
-    </section>
+        <div id="project-showcase" class="row">
+          <div class="col-md-12">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <div id="intersource" class="hidden showcase clearfix">
+              <img class="pull-left img-rounded" src="img/proj/push-and-pull-showcase.jpg">
+              <h3>InterSource <small> - Web Developer</small></h3>
+
+              InterSource is a custom furniture design shop based in Austin, Texas. They contracted me to build them a new website in Wordpress. Collaborating with their Graphic Designer, I built the new site and stood it up with a new domain and web host.
+
+              <ul class="links list-unstyled">
+                <li>
+                  <a href="http://www.intersourcecorp.com" target="_blank">
+                    InterSourceCorp.com
+                    <span class="glyphicon glyphicon-new-window"></span>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- end of Showcase -->
+
+            <div id="push-and-pull" class="showcase">
+              here are things about pushandpull
+            </div>
+
+            <div id="qubit" class="showcase">
+              here are things about qubit
+            </div>
+
+          </div> <!-- end of column -->
+        </div> <!-- end of Project Showcase row -->
+
+      </div> <!-- end of container -->
+    </section> <!-- end of Portfolio Jumbotron -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.shuffle.min.js"></script>
     <script src="js/custom.js"></script>

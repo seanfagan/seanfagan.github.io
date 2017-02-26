@@ -58,12 +58,39 @@ div.exp-details span ~ span {
    Portfolio
    ********* */
 
-.portfolio {
-	margin: 48px 0;
+.jumbotron {
+  padding-top: 15px;
+  margin: 2em 0;
+  min-height: 40em;
+  background: #1f2421;
+  color: #fffcf5;
+  box-shadow: 0 -5px 0 0 #eb5055 inset;
+  border-top: 5px #52489c solid; /*216869*/
+}
+
+.jumbotron a:hover,
+.jumbotron a:active,
+.jumbotron a:focus {
+  color: #fffcf5;
+  text-decoration: none;
+}
+
+div.align-row-bottom {
+  font-size: 0;
+}
+
+div.align-row-bottom > * {
+  float: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+div.align-row-bottom > *:last-child {
+  vertical-align: bottom;
 }
 
 .portfolio-sorting li a {
-	color: #565554;
+	color: #9f9c95;
 	text-decoration: none;
 	padding: 6px;
 }
@@ -74,8 +101,23 @@ div.exp-details span ~ span {
 }
 
 .portfolio-item {
-	padding: .5em;
 	border-bottom: 1px solid #565554;
+}
+
+.showcase{
+  padding: 1em 2em;
+  border-radius: 5px;
+  background: #444;
+  max-width: 800px;
+  margin: auto;
+}
+
+.showcase img {
+  max-width: 250px;
+  max-height: 300px;
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: 1px dashed #888;
 }
 
 /* **********
