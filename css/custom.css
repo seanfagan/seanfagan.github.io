@@ -67,7 +67,10 @@ div.exp-details span ~ span {
 /* *********
    Portfolio
    ********* */
-
+#portfolio h2 {
+  margin: 0;
+  color: green;
+}
 h3 small {
   font-family: 'Raleway', sans-serif;
   color: #ccc;
@@ -107,7 +110,7 @@ div.align-row-bottom > *:last-child {
 .portfolio-sorting li a {
 	color: #9f9c95;
 	text-decoration: none;
-	padding: 6px;
+	padding: 5px;
 }
 .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active {
