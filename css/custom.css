@@ -5,38 +5,48 @@ body {
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
-	font-family: 'Lora', serif;
+	font-family: 'Josefin Slab', serif;
 }
 
 a, a:hover {
   color: #eb5055;
 }
 
-h1.my-name {
+/*h1.my-name {
 	margin: .6em 0em;
 	font-size: 48px;
+}*/
+
+.zelda {
+  background: inherit;
+  color: #52489c;
 }
 
 /* ***************
    Experience
    *************** */
+
+#experience h2 {
+  margin: 10px 15px 5px 15px;
+}
+
 .list-group {
   background: initial;
   box-shadow: none;
 }
 
 .exp-entry {
-  border-bottom: 1px solid #817f82;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 1px;
 }
 
-a.list-group-item {
-  background: #fffcf5;
+a.list-group-item, a.list-group-item:focus {
+  background: inherit;
   color: #565554;
   border: none;
 }
 
-a.list-group-item:hover, a.list-group-item:focus {
+a.list-group-item:hover {
   background: initial;
   color: #eb5055;
 }
@@ -57,6 +67,11 @@ div.exp-details span ~ span {
 /* *********
    Portfolio
    ********* */
+
+h3 small {
+  font-family: 'Raleway', sans-serif;
+  color: #ccc;
+}
 
 .jumbotron {
   padding-top: 15px;
@@ -112,9 +127,12 @@ div.align-row-bottom > *:last-child {
   margin: auto;
 }
 
-.showcase img {
+.showcase-img img {
   max-width: 250px;
   max-height: 300px;
+}
+
+.showcase-img {
   margin-right: 1em;
   padding-right: 1em;
   border-right: 1px dashed #888;
