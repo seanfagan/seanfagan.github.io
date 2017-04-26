@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>The Great Title</title>
+    <title>Sean H Fagan</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,21 +22,100 @@
   </head>
   <body>
 
-    <h1 class="text-center my-name">Page Title</h1>
-    <hr class="fancy-line"/>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sean H Fagan</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#samples">Samples</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+          <p class="navbar-text navbar-right">
+            <a href="mailto:seanfagandesign@gmail.com">seanfagandesign@gmail.com</a>
+          <p>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    <section id="about">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-4 col-md-offset-4">
-    				<p>
-    					Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for a different Texas university, and keeps himself busy with a handful of side projects.
-    				</p>
-    			</div>
-    		</div> <!-- end of row -->
-    	</div>
-    </section> <!-- end of About -->
+    <section id="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-center text-center" id="header-col">
+            <img src="img/shf-white.png" alt="SHF" title="SHF" class="img-responsive center-block" />
+            <h1>Sean H Fagan</h1>
+            <em>designer, developer</em>
+          </div>
+        </div>
+      </div>
+    </section> <!-- end of Header -->
 
+    <section id="about" onmouseover="hoverOnAbout();" onmouseout="hoverOffAbout();">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-center" id="about-col">
+            <img id="portrait" width="120" height="120" src="img/fagan-portrait-bw.jpg" alt="Portrait of Sean" title="Sean"/>
+            <p>
+              Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for a different Texas university.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="music">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Music</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="146849764"></iframe> <!-- solarrim theme -->
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="142651928"></iframe> <!-- random encounters -->
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="297476837"></iframe> <!-- longcryer -->
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="237042969"></iframe> <!-- qubit between -->
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="19695984"></iframe> <!-- telepop -->
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <iframe class="soundcloud" width="100%" height="115" data-track="105132052"></iframe> <!-- sleepy fish -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <p>More available on <a href="#">SoundCloud</a></p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section> <!-- end of Music -->
     <section id="experience">
     	<div class="container">
     		<div class="row">
@@ -100,7 +179,7 @@
                     <span>May 2013 – August 2013</span>
                     <span>Austin, Texas</span>
                     <p class="description">
-                      Tester on such titles as Bioshock: Infinite, Civilization V, and Borderlands 2.
+                      Tester on Bioshock: Infinite, Civilization V, and Borderlands 2.
                     </p>
                   </div>
                 </div>
@@ -152,101 +231,8 @@
   		</div>
   	</section> <!-- end of Experience -->
 
-
-    <section class="portfolio jumbotron">
-      <div class="container">
-
-        <div class="row align-row-bottom">
-          <div class="col-md-6">
-            <h2>Projects</h2>
-          </div>
-          <div class="col-md-6 align-right">
-            <ul class="portfolio-sorting list-inline">
-              <li><a href="#" data-group="all" class="active text-uppercase">All</a></li>
-              <li><a href="#" data-group="web" class="text-uppercase">Web</a></li>
-              <li><a href="#" data-group="games" class="text-uppercase">Games</a></li>
-              <li><a href="#" data-group="music" class="text-uppercase">Music</a></li>
-            </ul> <!--end of Portfolio Sorting -->
-          </div>
-        </div> <!-- end of row -->
-
-        <div class="row">
-          <ul class="portfolio-items list-unstyled" id="grid">
-
-            <li class="col-md-12" data-groups='["web"]'>
-                <figure class="portfolio-item">
-                    <a href="#intersource" class="project">
-                        intersource
-                    </a>
-                </figure>
-            </li>
-
-           <li class="col-md-12" data-groups='["games"]'>
-              <figure class="portfolio-item">
-                  <a href="#push-and-pull" class="project">
-                      push and pull
-                  </a>
-              </figure>
-            </li>
-
-            <li class="col-md-12" data-groups='["games", "music"]'>
-              <figure class="portfolio-item">
-                  <a href="#qubit" class="project">
-                      qubit
-                  </a>
-              </figure>
-            </li>
-
-            <li class="col-md-12" data-groups='["music"]'>
-              <figure class="portfolio-item">
-                  <a href="#project-showcase" class="project">
-                      sleepy fish
-                  </a>
-              </figure>
-            </li>
-
-            <!-- sizer -->
-            <li class="col-md-12 shuffle_sizer"></li>
-
-          </ul> <!--end portfolio grid -->
-        </div> <!--end of row -->
-
-        <div id="project-showcase" class="row">
-          <div class="col-md-12">
-
-            <div id="intersource" class="hidden showcase clearfix">
-              <img class="pull-left img-rounded" src="img/proj/push-and-pull-showcase.jpg">
-              <h3>InterSource <small> - Web Developer</small></h3>
-
-              InterSource is a custom furniture design shop based in Austin, Texas. They contracted me to build them a new website in Wordpress. Collaborating with their Graphic Designer, I built the new site and stood it up with a new domain and web host.
-
-              <ul class="links list-unstyled">
-                <li>
-                  <a href="http://www.intersourcecorp.com" target="_blank">
-                    InterSourceCorp.com
-                    <span class="glyphicon glyphicon-new-window"></span>
-                  </a>
-                </li>
-              </ul>
-            </div> <!-- end of Showcase -->
-
-            <div id="push-and-pull" class="showcase">
-              here are things about pushandpull
-            </div>
-
-            <div id="qubit" class="showcase">
-              here are things about qubit
-            </div>
-
-          </div> <!-- end of column -->
-        </div> <!-- end of Project Showcase row -->
-
-      </div> <!-- end of container -->
-    </section> <!-- end of Portfolio Jumbotron -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -1,7 +1,19 @@
+/*
+white:  FFFCF5
+gray:   1F2421
+litred: EB5055
+drkred: 561D25
+purple: 4C2A85
+*/
+
+/* ***************
+   Typography
+   *************** */
+
 body {
-	background-color: #fffcf5;
-	border-top: 10px solid #eb5055;
+	background-color: #1F2421;
 	font-family: 'Raleway', sans-serif;
+  color: #FFFCF5;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
@@ -12,14 +24,101 @@ a, a:hover {
   color: #eb5055;
 }
 
-h1.my-name {
-	margin: .6em 0em;
-	font-size: 48px;
+/* ***************
+   General
+   *************** */
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+/* ***************
+   Navbar
+   *************** */
+
+.navbar-inverse {
+  background-color :#1F2421;
+}
+
+/* ***************
+   Header
+   *************** */
+
+#header {
+  background: url('../img/fagan-bikes.jpg') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header .container-fluid {
+  background: linear-gradient(to bottom right, rgba(45,0,5, 0.5), rgba(45,5,80,.4));
+}
+
+#header-col {
+  padding-top: 12em;
+  padding-bottom: 10em;
+  background: rgba(45,0,5,.9);
+  max-width: 30em;
+}
+
+#header-col h1, #header-col em {
+  color: #fff;
+  font-family: 'Raleway';
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+#header-col img {
+  width: 232px;
+}
+
+/* ***************
+   About
+   *************** */
+
+#about {
+  padding-top: 1em;
+  padding-bottom: .5em;
+  background-color: #561D25;
+  color: #FFFCF5;
+}
+
+#about-col {
+  max-width: 40em;
+}
+
+#about-col img {
+  float: left;
+  border: 1px black solid;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+/* ***************
+   Music
+   *************** */
+
+#music .container {
+  background: #251834;
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+#music .row {
+  margin-bottom: 2em;
 }
 
 /* ***************
    Experience
    *************** */
+#experience {
+  background: #fffcf6;
+  color: #344;
+}
+
 .list-group {
   background: initial;
   box-shadow: none;
@@ -52,109 +151,4 @@ div.exp-details span ~ span {
     border-left: 1px solid #8f8c85;
     color: #8f8c85;
     padding-left: 5px;
-}
-
-/* *********
-   Portfolio
-   ********* */
-
-.jumbotron {
-  padding-top: 15px;
-  margin: 2em 0;
-  min-height: 40em;
-  background: #1f2421;
-  color: #fffcf5;
-  box-shadow: 0 -5px 0 0 #eb5055 inset;
-  border-top: 5px #52489c solid; /*216869*/
-}
-
-.jumbotron a:hover,
-.jumbotron a:active,
-.jumbotron a:focus {
-  color: #fffcf5;
-  text-decoration: none;
-}
-
-div.align-row-bottom {
-  font-size: 0;
-}
-
-div.align-row-bottom > * {
-  float: none;
-  display: inline-block;
-  font-size: 14px;
-}
-
-div.align-row-bottom > *:last-child {
-  vertical-align: bottom;
-}
-
-.portfolio-sorting li a {
-	color: #9f9c95;
-	text-decoration: none;
-	padding: 6px;
-}
-.portfolio-sorting li a:hover,
-.portfolio-sorting li a.active {
-	color: #eb5055;
-	border-bottom: 2px solid #eb5055;
-}
-
-.portfolio-item {
-	border-bottom: 1px solid #565554;
-}
-
-.showcase{
-  padding: 1em 2em;
-  border-radius: 5px;
-  background: #444;
-  max-width: 800px;
-  margin: auto;
-}
-
-.showcase img {
-  max-width: 250px;
-  max-height: 300px;
-  margin-right: 1em;
-  padding-right: 1em;
-  border-right: 1px dashed #888;
-}
-
-/* **********
-   Fancy line ... courtesy of thgaskell
-   ********** */
-
-hr.fancy-line { 
-    border: 0; 
-    height: 1px;
-    position: relative;
-    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
-}
-hr.fancy-line:before {
-    top: -0.5em;
-    height: 1em;
-}
-hr.fancy-line:after {
-    content:'';
-    height: 0.5em;   /* half the height of :before */
-    top: 1px;        /* height of hr*/
-}
-
-hr.fancy-line:before, hr.fancy-line:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-}
-
-hr.fancy-line, hr.fancy-line:before {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-}
-
-hr.fancy-line:after {
-    background: #fffcf5;
 }
