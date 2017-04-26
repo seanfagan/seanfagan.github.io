@@ -17,14 +17,13 @@ body {
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
-	font-family: 'Josefin Slab', serif;
+	font-family: 'Lora', serif;
 }
 
 a, a:hover {
   color: #eb5055;
 }
 
-<<<<<<< HEAD
 /* ***************
    General
    *************** */
@@ -32,23 +31,12 @@ a, a:hover {
 .col-center {
   float: none;
   margin: 0 auto;
-=======
-/*h1.my-name {
-	margin: .6em 0em;
-	font-size: 48px;
-}*/
-
-.zelda {
-  background: inherit;
-  color: #52489c;
->>>>>>> origin/initial-development
 }
 
 /* ***************
    Navbar
    *************** */
 
-<<<<<<< HEAD
 .navbar-inverse {
   background-color :#1F2421;
 }
@@ -74,31 +62,6 @@ a, a:hover {
   padding-bottom: 10em;
   background: rgba(45,0,5,.9);
   max-width: 30em;
-=======
-#experience h2 {
-  margin: 10px 15px 5px 15px;
-}
-
-.list-group {
-  background: initial;
-  box-shadow: none;
-}
-
-.exp-entry {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1px;
-}
-
-a.list-group-item, a.list-group-item:focus {
-  background: inherit;
-  color: #565554;
-  border: none;
-}
-
-a.list-group-item:hover {
-  background: initial;
-  color: #eb5055;
->>>>>>> origin/initial-development
 }
 
 #header-col h1, #header-col em {
@@ -112,23 +75,9 @@ a.list-group-item:hover {
   width: 232px;
 }
 
-<<<<<<< HEAD
 /* ***************
    About
    *************** */
-=======
-/* *********
-   Portfolio
-   ********* */
-#portfolio h2 {
-  margin: 0;
-  color: green;
-}
-h3 small {
-  font-family: 'Raleway', sans-serif;
-  color: #ccc;
-}
->>>>>>> origin/initial-development
 
 #about {
   padding-top: 1em;
@@ -158,20 +107,8 @@ h3 small {
   padding-bottom: 5em;
 }
 
-<<<<<<< HEAD
 #music .row {
   margin-bottom: 2em;
-=======
-.portfolio-sorting li a {
-	color: #9f9c95;
-	text-decoration: none;
-	padding: 5px;
-}
-.portfolio-sorting li a:hover,
-.portfolio-sorting li a.active {
-	color: #eb5055;
-	border-bottom: 2px solid #eb5055;
->>>>>>> origin/initial-development
 }
 
 /* ***************
@@ -187,21 +124,9 @@ h3 small {
   box-shadow: none;
 }
 
-<<<<<<< HEAD
 .exp-entry {
   border-bottom: 1px solid #817f82;
   padding-bottom: 1px;
-=======
-.showcase-img img {
-  max-width: 250px;
-  max-height: 300px;
-}
-
-.showcase-img {
-  margin-right: 1em;
-  padding-right: 1em;
-  border-right: 1px dashed #888;
->>>>>>> origin/initial-development
 }
 
 a.list-group-item {
