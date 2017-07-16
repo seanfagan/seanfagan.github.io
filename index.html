@@ -4,235 +4,320 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sean H Fagan</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Online -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet"> 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
-  <body>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Sean H Fagan</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#samples">Samples</a></li>
-            <li><a href="#experience">Experience</a></li>
+  <body data-spy="scroll" data-target="#nav">
+
+    <div id="nav">
+      <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Sean H Fagan</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#music">Samples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
           </ul>
-          <p class="navbar-text navbar-right">
+          <span class="navbar-text">
             <a href="mailto:seanfagandesign@gmail.com">seanfagandesign@gmail.com</a>
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <div id="header" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-auto text-center">
+          <img src="img/shf-white-md.png" alt="SHF" title="SHF" width="232px" height="110px"/>
+          <h1>Sean H Fagan</h1>
+          <em>designer, developer</em>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <img id="portrait" class="float-left" width="120" height="120" src="img/fagan-portrait-bw.jpg" alt="Sean's face"/>
           <p>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <section id="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-center text-center" id="header-col">
-            <img src="img/shf-white.png" alt="SHF" title="SHF" class="img-responsive center-block" />
-            <h1>Sean H Fagan</h1>
-            <em>designer, developer</em>
-          </div>
+            Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for yet another Texas university.
+          </p>
         </div>
       </div>
-    </section> <!-- end of Header -->
+    </div>
 
-    <section id="about" onmouseover="hoverOnAbout();" onmouseout="hoverOffAbout();">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-center" id="about-col">
-            <img id="portrait" width="120" height="120" src="img/fagan-portrait-bw.jpg" alt="Portrait of Sean" title="Sean"/>
-            <p>
-              Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for a different Texas university.
-            </p>
-          </div>
+    <div id="projects" class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+          <ul class="list-unstyled">
+            <li class="media my-4">
+              <img class="d-flex mr-3" src="..." alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media my-4">
+              <img class="d-flex mr-3" src="..." alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media my-4">
+              <img class="d-flex mr-3" src="..." alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
-    </section>
+    </div>
 
+    <div id="samples" class="container-fluid">
 
-    <section id="music">
-      <div class="container">
+      <div id="graphics" class="container">
         <div class="row">
-          <div class="col-xs-12 text-center">
+          <div class="col-12 text-center">
+            <h2>Graphics</h2>
+          </div>
+
+          <a href="img/graphics/imm/imm-logo.jpg" data-toggle="lightbox" data-gallery="imm" class="col-3 text-center">
+            <img src="img/graphics/imm-thumb.jpg" class="img-fluid rounded">
+            <span>Immortal to Man</span>
+          </a>
+
+          <a href="img/graphics/pap/pap-logo.jpg" data-toggle="lightbox" data-gallery="pap" class="col-3 text-center">
+            <img src="img/graphics/pap-thumb.jpg" class="img-fluid rounded">
+            <span>Push and Pull</span>
+          </a>
+
+          <a href="img/graphics/rtc/rtc-cursors.jpg" data-toggle="lightbox" data-gallery="rtc" class="col-3 text-center">
+            <img src="img/graphics/rtc-thumb.jpg" class="img-fluid rounded">
+            <span>Return to Color</span>
+          </a>
+
+          <a href="img/graphics/art/art-logos.png" data-toggle="lightbox" data-gallery="art" class="col-3 text-center" title="Content warning: War photography">
+            <img src="img/graphics/art-thumb.jpg" class="img-fluid rounded">
+            <span>Other</span>
+          </a>
+
+          <!-- "imm" gallery" -->
+          <div data-toggle="lightbox" data-gallery="imm" data-remote="img/graphics/imm/imm-abilities.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="imm" data-remote="img/graphics/imm/imm-reticles.png"></div>
+          <div data-toggle="lightbox" data-gallery="imm" data-remote="img/graphics/imm/imm-tutorial1.png"></div>
+          <div data-toggle="lightbox" data-gallery="imm" data-remote="img/graphics/imm/imm-tutorial2.png"></div>
+          <div data-toggle="lightbox" data-gallery="imm" data-remote="img/graphics/imm/imm-tutorial3.png"></div>
+
+          <!-- "pap" gallery -->
+          <div data-toggle="lightbox" data-gallery="pap" data-remote="img/graphics/pap/pap-docs.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="pap" data-remote="img/graphics/pap/pap-swapper.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="pap" data-remote="img/graphics/pap/pap-cursor.jpg"></div>
+
+          <!-- "rtc" gallery -->
+          <div data-toggle="lightbox" data-gallery="rtc" data-remote="img/graphics/rtc/rtc-menu.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="rtc" data-remote="img/graphics/rtc/rtc-credits.png"></div>
+          <div data-toggle="lightbox" data-gallery="rtc" data-remote="img/graphics/rtc/rtc-selector.png"></div>
+
+          <!-- "art" gallery -->
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-vietnam1.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-vietnam2.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-vietnam3.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-album.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-characters.jpg"></div>
+          <div data-toggle="lightbox" data-gallery="art" data-remote="img/graphics/art/art-elevator.gif"></div>
+
+        </div>
+      </div>
+
+      <div id="music" class="container">
+        <div class="row">
+          <div class="col-12 text-center">
             <h2>Music</h2>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="146849764"></iframe> <!-- solarrim theme -->
+          <div class="col-12 col-md-6">
+            <div id="solar" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="146849764">cinematic</a>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="142651928"></iframe> <!-- random encounters -->
+          <div class="col-12 col-md-6">
+            <div id="random" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="142651928">high energy</a>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="297476837"></iframe> <!-- longcryer -->
+          <div class="col-12 col-md-6">
+            <div id="longcryer" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="297476837">orchestral</a>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="237042969"></iframe> <!-- qubit between -->
+          <div class="col-12 col-md-6">
+            <div id="between" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="237042969">tonal</a>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="19695984"></iframe> <!-- telepop -->
+          <div class="col-12 col-md-6">
+            <div id="telepop" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="19695984">jungle remix</a>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-6">
-            <iframe class="soundcloud" width="100%" height="115" data-track="105132052"></iframe> <!-- sleepy fish -->
+          <div class="col-12 col-md-6">
+            <div id="sleepy" class="waveform d-flex justify-content-center align-items-center">
+              <a class="soundcloud" href="#" onclick="return false" data-track="105132052">experimental</a>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xs-12 text-center">
+          <div class="col-12 text-center">
             <p>More available on <a href="#">SoundCloud</a></p>
           </div>
         </div>
-
-        </div>
       </div>
-    </section> <!-- end of Music -->
-    <section id="experience">
-    	<div class="container">
-    		<div class="row">
-    			<div id="work" class="col-md-6">
+    </div>
 
-            <h2>Work</h2>
+  	<div id="resume" class="container">
+  		<div class="row">
+  			<div class="col-md-6">
 
-  					<div class="panel list-group">
+          <h2>Work</h2>
 
-              <div class="exp-entry">
-                <a href="#job-ut-sd" class="list-group-item" data-toggle="collapse">
-                  Software Developer - The University of Texas at Austin
-                </a>
-                <div id="job-ut-sd" class="collapse">
-                  <div class="exp-details">
-                    <span>October 2015 – Present</span>
-    						    <span>Austin, Texas</span>
-                    <p class="description">
-                      Web development with Python / Django and maintenance of Oracle and Mainframe databases.
-                    </p>
-                  </div>
-  						  </div>
-              </div> <!-- end of Exp Entry -->
+					<div class="panel list-group">
 
-              <div class="exp-entry">
-                <a href="#job-dma" class="list-group-item" data-toggle="collapse">
-                  Instructor - Digital Media Academy
-                </a>
-                <div id="job-dma" class="collapse">
-                  <div class="exp-details">
-                    <span>May 2015 – August 2015</span>
-                    <span>Austin, Texas</span>
-                    <p class="description">
-                      Taught ages 12-18 courses on programming in Java and C# for creating games and generative art.
-                    </p>
-                  </div>
+            <div class="exp-entry">
+              <a href="#job-ut-sd" class="list-group-item" data-toggle="collapse">
+                Software Developer - The University of Texas at Austin
+              </a>
+              <div id="job-ut-sd" class="collapse">
+                <div class="exp-details">
+                  <span>October 2015 – Present</span>
+  						    <span>Austin, Texas</span>
+                  <p class="description">
+                    Web development with Python / Django and maintenance of Oracle and Mainframe databases.
+                  </p>
                 </div>
-              </div> <!-- end of Exp Entry -->
+						  </div>
+            </div> <!-- end of Exp Entry -->
 
-              <div class="exp-entry">
-                <a href="#job-utd" class="list-group-item" data-toggle="collapse">
-                  CompSci Outreach Instructor - The University of Texas at Dallas
-                </a>
-                <div id="job-utd" class="collapse">
-                  <div class="exp-details">
-                    <span>April 2014 – May 2015</span>
-                    <span>Dallas, Texas</span>
-                    <p class="description">
-                      Taught ages 8-14 courses on learning how to program via A.L.I.C.E and GameMaker.
-                    </p>
-                  </div>
+            <div class="exp-entry">
+              <a href="#job-dma" class="list-group-item" data-toggle="collapse">
+                Instructor - Digital Media Academy
+              </a>
+              <div id="job-dma" class="collapse">
+                <div class="exp-details">
+                  <span>May 2015 – August 2015</span>
+                  <span>Austin, Texas</span>
+                  <p class="description">
+                    Taught ages 12-18 courses on programming in Java and C# for creating games and generative art.
+                  </p>
                 </div>
-              </div> <!-- end of Exp Entry -->
+              </div>
+            </div> <!-- end of Exp Entry -->
 
-              <div class="exp-entry">
-                <a href="#job-aspyr" class="list-group-item" data-toggle="collapse">
-                  QA Tester - Aspyr Media
-                </a>
-                <div id="job-aspyr" class="collapse">
-                  <div class="exp-details">
-                    <span>May 2013 – August 2013</span>
-                    <span>Austin, Texas</span>
-                    <p class="description">
-                      Tester on Bioshock: Infinite, Civilization V, and Borderlands 2.
-                    </p>
-                  </div>
+            <div class="exp-entry">
+              <a href="#job-utd" class="list-group-item" data-toggle="collapse">
+                CompSci Outreach Instructor - The University of Texas at Dallas
+              </a>
+              <div id="job-utd" class="collapse">
+                <div class="exp-details">
+                  <span>April 2014 – May 2015</span>
+                  <span>Dallas, Texas</span>
+                  <p class="description">
+                    Taught ages 8-14 courses on learning how to program via A.L.I.C.E and GameMaker.
+                  </p>
                 </div>
-              </div> <!-- end of Exp Entry -->
+              </div>
+            </div> <!-- end of Exp Entry -->
 
-  					</div>
-  				</div> <!-- end of Work column -->
-
-          <div id="education" class="col-md-6">
-
-            <h2>Education</h2>
-
-            <div class="panel list-group">
-
-              <div class="exp-entry">
-                <a href="#edu-utd" class="list-group-item" data-toggle="collapse">
-                  <span class="glyphicon glyphicon-education"></span>
-                  B.A. Arts and Technology - The University of Texas at Dallas
-                </a>
-                <div id="edu-utd" class="collapse">
-                  <div class="exp-details">
-                    <span>August 2012 – May 2015</span>
-                    <span>Dallas, Texas</span>
-                    <p class="description">
-                      B.A. with a focus in game design and user experience/interaction design.<br/> Member of Game Production Lab and Tau Sigma NHS.
-                    </p>
-                  </div>
+            <div class="exp-entry">
+              <a href="#job-aspyr" class="list-group-item" data-toggle="collapse">
+                QA Tester - Aspyr Media
+              </a>
+              <div id="job-aspyr" class="collapse">
+                <div class="exp-details">
+                  <span>May 2013 – August 2013</span>
+                  <span>Austin, Texas</span>
+                  <p class="description">
+                    Tester on Bioshock: Infinite, Civilization V, and Borderlands 2.
+                  </p>
                 </div>
-              </div> <!-- end of Exp Entry -->
+              </div>
+            </div> <!-- end of Exp Entry -->
 
-              <div class="exp-entry">
-                <a href="#edu-unt" class="list-group-item" data-toggle="collapse">
-                  Music Composition - The University of North Texas
-                </a>
-                <div id="edu-unt" class="collapse">
-                  <div class="exp-details">
-                    <span>August 2010 – May 2012</span>
-                    <span>Denton, Texas</span>
-                    <p class="description">
-                      Focused on music composition. Member of Composers Forum. Transferred before completing degree.
-                    </p>
-                  </div>
+					</div>
+				</div> <!-- end of Work column -->
+
+        <div class="col-md-6">
+
+          <h2>Education</h2>
+
+          <div class="panel list-group">
+
+            <div class="exp-entry">
+              <a href="#edu-utd" class="list-group-item" data-toggle="collapse">
+                B.A. Arts and Technology - The University of Texas at Dallas
+              </a>
+              <div id="edu-utd" class="collapse">
+                <div class="exp-details">
+                  <span>August 2012 – May 2015</span>
+                  <span>Dallas, Texas</span>
+                  <p class="description">
+                    B.A. with a focus in game design and user experience/interaction design.<br/> Member of Game Production Lab and Tau Sigma NHS.
+                  </p>
                 </div>
-              </div> <!-- end of Exp Entry -->
+              </div>
+            </div> <!-- end of Exp Entry -->
 
-            </div>
-          </div> <!-- end of Education column -->
-  			</div> <!-- end of row -->
-  		</div>
-  	</section> <!-- end of Experience -->
+            <div class="exp-entry">
+              <a href="#edu-unt" class="list-group-item" data-toggle="collapse">
+                Music Composition - The University of North Texas
+              </a>
+              <div id="edu-unt" class="collapse">
+                <div class="exp-details">
+                  <span>August 2010 – May 2012</span>
+                  <span>Denton, Texas</span>
+                  <p class="description">
+                    Focused on music composition. Member of Composers Forum. Transferred before completing degree.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- end of Exp Entry -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+          </div>
+        </div> <!-- end of Education column -->
+			</div> <!-- end of row -->
+		</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

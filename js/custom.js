@@ -1,20 +1,22 @@
-window.onload = function(){
-  setupSoundCloudEmbeds();
-}
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
 
-function hoverOnAbout() {
-  $("#portrait").attr('src', 'img/fagan-portrait-color.jpg');
-}
+$(document).on('mouseenter', '#portrait', function(e) {
+    var $portrait = $(e.target);
+    var color_path = 'img/fagan-portrait-color.jpg';
+    var greyscale_path = 'img/fagan-portrait-bw.jpg';
 
-function hoverOffAbout() {
-  $("#portrait").attr('src', 'img/fagan-portrait-bw.jpg');
-}
+    if ($portrait.attr('src') == greyscale_path) {
+      $portrait.attr('src', color_path);
+    } else {
+      $portrait.attr('src', greyscale_path);
+    }
+});
 
-function setupSoundCloudEmbeds() {
-  var iframes = $("iframe.soundcloud").get();
-  $.each(iframes, function(index, iframe) {
-    iframe.setAttribute("src", "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + iframe.dataset.track + "&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;color=333333&amp;liking=false&amp;hide_cookies=true&amp;download=false");
-    iframe.setAttribute("scrolling", "no");
-    iframe.setAttribute("frameborder", "no");
-  });
-}
+$(document).on('click', 'a.soundcloud', function(e) {
+  var $link = $(e.target);
+  var track = $link.data("track");
+  $(e.target).replaceWith('<iframe width="100%" height="115" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + track + '&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;color=333333&amp;liking=false&amp;hide_cookies=true&amp;download=false"></iframe>');
+});

@@ -6,6 +6,10 @@ drkred: 561D25
 purple: 4C2A85
 */
 
+.rounded {
+  border-radius: .5rem;
+}
+
 /* ***************
    Typography
    *************** */
@@ -24,13 +28,13 @@ a, a:hover {
   color: #eb5055;
 }
 
-/* ***************
-   General
-   *************** */
+.ekko-lightbox {
+  color: #000;
+}
 
-.col-center {
-  float: none;
-  margin: 0 auto;
+.modal-body {
+  padding: 0;
+  background: #333;
 }
 
 /* ***************
@@ -39,6 +43,10 @@ a, a:hover {
 
 .navbar-inverse {
   background-color :#1F2421;
+}
+
+.navbar-text a {
+  color: #FFFCF5;
 }
 
 /* ***************
@@ -53,26 +61,20 @@ a, a:hover {
   background-size: cover;
 }
 
-#header .container-fluid {
+#header .row {
   background: linear-gradient(to bottom right, rgba(45,0,5, 0.5), rgba(45,5,80,.4));
 }
 
-#header-col {
-  padding-top: 12em;
-  padding-bottom: 10em;
+#header .col-12 {
+  padding: 12em 8% 10em 8%;
   background: rgba(45,0,5,.9);
-  max-width: 30em;
 }
 
-#header-col h1, #header-col em {
+#header h1, #header em {
   color: #fff;
   font-family: 'Raleway';
   letter-spacing: 2px;
   margin-bottom: 0;
-}
-
-#header-col img {
-  width: 232px;
 }
 
 /* ***************
@@ -84,39 +86,107 @@ a, a:hover {
   padding-bottom: .5em;
   background-color: #561D25;
   color: #FFFCF5;
+  border-bottom: solid 7px #3C141A;
 }
 
-#about-col {
+#about .col-12 {
   max-width: 40em;
 }
 
-#about-col img {
+#portrait {
   float: left;
-  border: 1px black solid;
+  border: 1px #1F2421 solid;
   margin-right: 1em;
   margin-bottom: .5em;
+}
+
+#portrait:hover {
+  border: 1px #FFFCF5 solid;
+}
+
+/* ***************
+   Graphics
+   *************** */
+
+#graphics {
+  background: #444;
+  padding: 2em 2em 4em 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#graphics .col-12 {
+  margin-bottom: 2em;
+}
+
+#graphics img {
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+#graphics a {
+  color: #fff;
 }
 
 /* ***************
    Music
    *************** */
 
-#music .container {
+#music {
   background: #251834;
-  padding-top: 1em;
-  padding-bottom: 5em;
+  padding: 2em 2em 2em 2em;
 }
 
-#music .row {
+#music .col-12 {
   margin-bottom: 2em;
 }
 
+.waveform {
+  height: 115px;
+  border-radius: 5px;
+}
+
+#music a.soundcloud {
+  color: #fff;
+}
+
+.waveform#solar {
+  background: url('../img/music/wave_solar.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#random {
+  background: url('../img/music/wave_random.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#longcryer {
+  background: url('../img/music/wave_longcryer.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#between {
+  background: url('../img/music/wave_between.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#telepop {
+  background: url('../img/music/wave_telepop.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#sleepy {
+  background: url('../img/music/wave_sleepy.png') center no-repeat;
+  background-size: cover;
+}
+
 /* ***************
-   Experience
+   Resume
    *************** */
-#experience {
-  background: #fffcf6;
+#resume {
+  background: #FFFCF5;
   color: #344;
+  padding-top: 1em;
+  min-height: 25em;
 }
 
 .list-group {
@@ -130,12 +200,12 @@ a, a:hover {
 }
 
 a.list-group-item {
-  background: #fffcf5;
+  background: #FFFCF5;
   color: #565554;
   border: none;
 }
 
-a.list-group-item:hover, a.list-group-item:focus {
+a.list-group-item:hover {
   background: initial;
   color: #eb5055;
 }
