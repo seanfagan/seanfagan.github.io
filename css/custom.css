@@ -6,8 +6,13 @@ drkred: 561D25
 purple: 4C2A85
 */
 
-.rounded {
-  border-radius: .5rem;
+
+/* ***************
+   Spacing
+   *************** */
+
+.container-fluid {
+  padding: 0 2em 0 2em;
 }
 
 /* ***************
@@ -16,7 +21,7 @@ purple: 4C2A85
 
 body {
 	background-color: #1F2421;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif; 
   color: #FFFCF5;
 }
 
@@ -104,28 +109,40 @@ a, a:hover {
   border: 1px #FFFCF5 solid;
 }
 
+
+/* ***************
+   Projects
+   *************** */
+
+.media img {
+  max-width: 250px;
+  padding: 15px;
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
 /* ***************
    Graphics
    *************** */
 
-#graphics {
-  background: #444;
-  padding: 2em 2em 4em 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
+/*#graphics {*/
+/*  background: #444;*/
+/*  padding: 2em 2em 4em 2em;*/
+/*  margin-top: 2em;*/
+/*  margin-bottom: 2em;*/
+/*}*/
 
-#graphics .col-12 {
-  margin-bottom: 2em;
-}
+/*#graphics .col-12 {*/
+/*  margin-bottom: 2em;*/
+/*}*/
 
-#graphics img {
-  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-}
+/*#graphics img {*/
+/*  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);*/
+/*}*/
 
-#graphics a {
-  color: #fff;
-}
+/*#graphics a {*/
+/*  color: #fff;*/
+/*}*/
 
 /* ***************
    Music
@@ -141,11 +158,11 @@ a, a:hover {
 }
 
 .waveform {
-  height: 115px;
-  border-radius: 5px;
+  height: 85px;
+  border-radius: 3px;
 }
 
-#music a.soundcloud {
+#music .soundcloud {
   color: #fff;
 }
 
@@ -183,7 +200,7 @@ a, a:hover {
    Resume
    *************** */
 #resume {
-  background: #FFFCF5;
+  background: #FFFCF5; /* 153649 */
   color: #344;
   padding-top: 1em;
   min-height: 25em;
