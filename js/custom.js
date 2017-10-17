@@ -3,16 +3,10 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   $(this).ekkoLightbox();
 });
 
-$(document).on('mouseenter', '#portrait', function(e) {
-    var $portrait = $(e.target);
-    var color_path = 'img/fagan-portrait-color.jpg';
-    var greyscale_path = 'img/fagan-portrait-bw.jpg';
-
-    if ($portrait.attr('src') == greyscale_path) {
-      $portrait.attr('src', color_path);
-    } else {
-      $portrait.attr('src', greyscale_path);
-    }
+$('#portrait').hover(function() {
+  $(this).attr('src', 'img/fagan-portrait-color.jpg');
+}, function() {
+  $(this).attr('src', 'img/fagan-portrait-bw.jpg');
 });
 
 $(document).on('click', 'a.soundcloud', function(e) {
