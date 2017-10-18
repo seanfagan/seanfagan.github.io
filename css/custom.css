@@ -43,7 +43,7 @@ a, a:hover {
 }
 
 /* ***************
-   Navbar
+   Navbar & Footer
    *************** */
 
 .navbar-inverse {
@@ -54,11 +54,16 @@ a, a:hover {
   color: #FFFCF5;
 }
 
+footer {
+  padding: 1em 0;
+}
+
 /* ***************
    Header
    *************** */
 
 #header {
+  padding: 0;
   background: url('../img/fagan-bikes.jpg') bottom center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,40 +114,24 @@ a, a:hover {
   border: 1px #FFFCF5 solid;
 }
 
-
 /* ***************
    Projects
    *************** */
 
+#projects .row {
+  max-width: 75em;
+}
+
 .media img {
   max-width: 250px;
-  padding: 15px;
   background: #1a1a1a;
   border-radius: 5px;
 }
 
-/* ***************
-   Graphics
-   *************** */
-
-/*#graphics {*/
-/*  background: #444;*/
-/*  padding: 2em 2em 4em 2em;*/
-/*  margin-top: 2em;*/
-/*  margin-bottom: 2em;*/
-/*}*/
-
-/*#graphics .col-12 {*/
-/*  margin-bottom: 2em;*/
-/*}*/
-
-/*#graphics img {*/
-/*  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);*/
-/*}*/
-
-/*#graphics a {*/
-/*  color: #fff;*/
-/*}*/
+#project-list li.media {
+  padding: 1em 1.5em;
+  background: #1a1a1a;
+}
 
 /* ***************
    Music
@@ -151,6 +140,11 @@ a, a:hover {
 #music {
   background: #251834;
   padding: 2em 2em 2em 2em;
+  border-bottom: solid 7px #3a2a40;
+}
+
+#music .row {
+  max-width: 75em;
 }
 
 #music .col-12 {
@@ -199,11 +193,16 @@ a, a:hover {
 /* ***************
    Resume
    *************** */
+
 #resume {
   background: #FFFCF5; /* 153649 */
   color: #344;
   padding-top: 1em;
   min-height: 25em;
+}
+
+#resume .row {
+  max-width: 75em;
 }
 
 .list-group {

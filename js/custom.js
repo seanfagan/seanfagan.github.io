@@ -1,13 +1,18 @@
+var year = new Date().getFullYear();
+document.getElementById("copyright").textContent = year;
+
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
 
 $('#portrait').hover(function() {
   $(this).attr('src', 'img/fagan-portrait-color.jpg');
 }, function() {
   $(this).attr('src', 'img/fagan-portrait-bw.jpg');
 });
+
 
 $(document).on('click', 'a.soundcloud', function(e) {
   var $link = $(e.target);
