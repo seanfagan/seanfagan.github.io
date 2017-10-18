@@ -1,14 +1,241 @@
+/*
+white:  FFFCF5
+gray:   1F2421
+litred: EB5055
+drkred: 561D25
+purple: 4C2A85
+*/
+
+
+/* ***************
+   Spacing
+   *************** */
+
+.container-fluid {
+  padding: 0 2em 0 2em;
+}
+
+/* ***************
+   Typography
+   *************** */
+
 body {
-	background-color: #fffcf5;
-	border-top: 10px solid #eb5055;
-	font-family: 'Raleway', sans-serif;
+	background-color: #1F2421;
+	font-family: 'Raleway', sans-serif; 
+  color: #FFFCF5;
+
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
 	font-family: 'Lora', serif;
 }
 
-h1.my-name {
-	margin: .6em 0em;
-	font-size: 48px;
+a, a:hover {
+  color: #eb5055;
+}
+
+.ekko-lightbox {
+  color: #000;
+}
+
+.modal-body {
+  padding: 0;
+  background: #333;
+}
+
+/* ***************
+   Navbar & Footer
+   *************** */
+
+.navbar-inverse {
+  background-color :#1F2421;
+}
+
+.navbar-text a {
+  color: #FFFCF5;
+}
+
+footer {
+  padding: 1em 0;
+}
+
+/* ***************
+   Header
+   *************** */
+
+#header {
+  padding: 0;
+  background: url('../img/fagan-bikes.jpg') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header .row {
+  background: linear-gradient(to bottom right, rgba(45,0,5, 0.5), rgba(45,5,80,.4));
+}
+
+#header .col-12 {
+  padding: 12em 8% 10em 8%;
+  background: rgba(45,0,5,.9);
+}
+
+#header h1, #header em {
+  color: #fff;
+  font-family: 'Raleway';
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+/* ***************
+   About
+   *************** */
+
+#about {
+  padding-top: 1em;
+  padding-bottom: .5em;
+  background-color: #561D25;
+  color: #FFFCF5;
+  border-bottom: solid 7px #3C141A;
+}
+
+#about .col-12 {
+  max-width: 40em;
+}
+
+#portrait {
+  float: left;
+  border: 1px #1F2421 solid;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+#portrait:hover {
+  border: 1px #FFFCF5 solid;
+}
+
+/* ***************
+   Projects
+   *************** */
+
+#projects .row {
+  max-width: 75em;
+}
+
+.media img {
+  max-width: 250px;
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+#project-list li.media {
+  padding: 1em 1.5em;
+  background: #1a1a1a;
+}
+
+/* ***************
+   Music
+   *************** */
+
+#music {
+  background: #251834;
+  padding: 2em 2em 2em 2em;
+  border-bottom: solid 7px #3a2a40;
+}
+
+#music .row {
+  max-width: 75em;
+}
+
+#music .col-12 {
+  margin-bottom: 2em;
+}
+
+.waveform {
+  height: 85px;
+  border-radius: 3px;
+}
+
+#music .soundcloud {
+  color: #fff;
+}
+
+.waveform#solar {
+  background: url('../img/music/wave_solar.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#random {
+  background: url('../img/music/wave_random.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#longcryer {
+  background: url('../img/music/wave_longcryer.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#between {
+  background: url('../img/music/wave_between.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#telepop {
+  background: url('../img/music/wave_telepop.png') center no-repeat;
+  background-size: cover;
+}
+
+.waveform#sleepy {
+  background: url('../img/music/wave_sleepy.png') center no-repeat;
+  background-size: cover;
+}
+
+/* ***************
+   Resume
+   *************** */
+
+#resume {
+  background: #FFFCF5; /* 153649 */
+  color: #344;
+  padding-top: 1em;
+  min-height: 25em;
+}
+
+#resume .row {
+  max-width: 75em;
+}
+
+.list-group {
+  background: initial;
+  box-shadow: none;
+}
+
+.exp-entry {
+  border-bottom: 1px solid #817f82;
+  padding-bottom: 1px;
+}
+
+a.list-group-item {
+  background: #FFFCF5;
+  color: #565554;
+  border: none;
+}
+
+a.list-group-item:hover {
+  background: initial;
+  color: #eb5055;
+}
+
+div.exp-details {
+  padding: 5px 20px 1px 20px;
+  margin: 5px 0 15px 20px;
+  border-left: 1px dashed #ccc;
+}
+
+div.exp-details span ~ span {
+    margin-left: 5px;
+    border-left: 1px solid #8f8c85;
+    color: #8f8c85;
+    padding-left: 5px;
 }
