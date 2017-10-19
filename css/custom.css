@@ -124,9 +124,10 @@ footer {
 }
 
 .media img {
+  width: 100%;
   max-width: 250px;
   background: #1a1a1a;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 #project-list li.media {
