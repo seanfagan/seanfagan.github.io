@@ -19,10 +19,11 @@ $(window).scroll(function() {
   });
   
   var alpha = .5 - scrollY * 0.001
-	$("#header .row").css({
-    "background": "linear-gradient(to bottom right, rgba(45,0,5," + alpha + "), rgba(35,5,60," + alpha + "))",
-	});
-	
+  if (alpha > 0) {
+  	$("#header .row").css({
+      "background": "linear-gradient(to bottom right, rgba(45,0,5," + alpha + "), rgba(35,5,60," + alpha + "))",
+  	});
+  }
 });
 
 
