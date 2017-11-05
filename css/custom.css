@@ -34,6 +34,10 @@ a, a:hover {
   color: #eb5055;
 }
 
+.text-muted {
+  color: #898989 !important;
+}
+
 .ekko-lightbox {
   color: #000;
 }
