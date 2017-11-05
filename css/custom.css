@@ -68,6 +68,7 @@ footer {
 
 #header {
   padding: 0;
+  overflow-x: hidden;
   background: url('../img/fagan-bikes.jpg') bottom center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -75,7 +76,7 @@ footer {
   background-size: cover;
 }
 
-#header #logo {
+#logo {
   width: 232px;
   height: 110px;
 }
