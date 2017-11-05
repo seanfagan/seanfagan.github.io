@@ -10,12 +10,19 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 $(window).scroll(function() {
   var windowH = $(window).height();
   var scrollY = $(window).scrollTop();
+  
   $('.grayscale').each(function() {
     var imgPosition = $(this).offset().top;
     if (scrollY > imgPosition - windowH) {
       $(this).addClass("ungrayscale");
     }
   });
+  
+  var alpha = .5 - scrollY * 0.001
+	$("#header .row").css({
+    "background": "linear-gradient(to bottom right, rgba(45,0,5," + alpha + "), rgba(35,5,60," + alpha + "))",
+	});
+	
 });
 
 
