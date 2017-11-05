@@ -72,6 +72,11 @@ footer {
   background-size: cover;
 }
 
+#header #logo {
+  width: 232px;
+  height: 110px;
+}
+
 #header .row {
   background: linear-gradient(to bottom right, rgba(45,0,5, 0.5), rgba(45,5,80,.4));
 }
