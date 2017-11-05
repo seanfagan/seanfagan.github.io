@@ -6,7 +6,6 @@ drkred: 561D25
 purple: 4C2A85
 */
 
-
 /* ***************
    Spacing
    *************** */
@@ -118,11 +117,7 @@ footer {
   border: 1px #1F2421 solid;
   margin-right: 1em;
   margin-bottom: .5em;
-}
-
-#portrait:hover {
-  border: 1px #FFFCF5 solid;
-}
+} 
 
 /* ***************
    Projects
@@ -248,4 +243,24 @@ div.exp-details span ~ span {
     border-left: 1px solid #8f8c85;
     color: #8f8c85;
     padding-left: 5px;
+}
+
+/* ***************
+   Animation
+   *************** */
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.ungrayscale {
+  animation: ungrayscale 3s both;
+}
+
+@keyframes ungrayscale {
+  100% {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
