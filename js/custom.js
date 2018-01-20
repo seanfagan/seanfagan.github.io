@@ -7,10 +7,23 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 });
 
 
-$('#portrait').hover(function() {
-  $(this).attr('src', 'img/fagan-portrait-color.jpg');
-}, function() {
-  $(this).attr('src', 'img/fagan-portrait-bw.jpg');
+$(window).scroll(function() {
+  var windowH = $(window).height();
+  var scrollY = $(window).scrollTop();
+  
+  $('.grayscale').each(function() {
+    var imgPosition = $(this).offset().top;
+    if (scrollY > imgPosition - windowH) {
+      $(this).addClass("ungrayscale");
+    }
+  });
+  
+  var alpha = .5 - scrollY * 0.001
+  if (alpha > 0) {
+  	$("#header .row").css({
+      "background": "linear-gradient(to bottom right, rgba(45,0,5," + alpha + "), rgba(35,5,60," + alpha + "))",
+  	});
+  }
 });
 
 
