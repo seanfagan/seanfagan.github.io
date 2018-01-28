@@ -29,7 +29,7 @@ body {
 	font-family: 'Lora', serif;
 }
 
-a, a:hover {
+a, a:hover, a:active {
   color: #eb5055;
 }
 
