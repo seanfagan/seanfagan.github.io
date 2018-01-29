@@ -29,7 +29,7 @@ body {
 	font-family: 'Lora', serif;
 }
 
-a, a:hover {
+a, a:hover, a:active {
   color: #eb5055;
 }
 
@@ -130,7 +130,7 @@ footer {
 
 .media img {
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   background: #1a1a1a;
   border-radius: 15px;
 }
