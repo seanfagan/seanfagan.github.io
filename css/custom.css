@@ -102,8 +102,8 @@ a, a:hover, a:active {
   background: linear-gradient(to bottom right, #111, #251834);
 }
 
-#about .col-12 {
-  max-width: 40em;
+#projects .col-12 {
+  max-width: 60em;
 }
 
 #projects .row {
@@ -114,7 +114,7 @@ a, a:hover, a:active {
   width: 100%;
   max-width: 100px;
   background: #1a1a1a;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 #project-list li.media {
