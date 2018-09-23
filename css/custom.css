@@ -19,10 +19,9 @@ purple: 4C2A85
    *************** */
 
 body {
-	background-color: #1F2421;
-	font-family: 'Raleway', sans-serif; 
-  color: #FFFCF5;
-
+	background-color: #201c23;
+	font-family: 'Raleway', sans-serif;
+  color: #FFF5FF;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
@@ -30,11 +29,11 @@ body {
 }
 
 a, a:hover, a:active {
-  color: #eb5055;
+  color: #eb5055 !important;
 }
 
 .text-muted {
-  color: #898989 !important;
+  color: #aaa !important;
 }
 
 .ekko-lightbox {
@@ -44,22 +43,6 @@ a, a:hover, a:active {
 .modal-body {
   padding: 0;
   background: #333;
-}
-
-/* ***************
-   Navbar & Footer
-   *************** */
-
-.navbar-inverse {
-  background-color :#1F2421;
-}
-
-.navbar-text a {
-  color: #FFFCF5;
-}
-
-footer {
-  padding: 1em 0;
 }
 
 /* ***************
@@ -76,25 +59,23 @@ footer {
   background-size: cover;
 }
 
-#logo {
-  width: 232px;
-  height: 110px;
-}
-
 #header .row {
   background: linear-gradient(to bottom right, rgba(45,0,5, 0.5), rgba(35,5,60,.4));
 }
 
 #header .col-12 {
-  padding: 12em 8% 10em 8%;
+  padding: 5em 8% 5em 8%;
   background: rgba(45,0,5,.9);
+}
+
+#portrait {
+  border: 5px #3C141A solid;
 }
 
 #header h1, #header em {
   color: #fff;
   font-family: 'Raleway';
   letter-spacing: 2px;
-  margin-bottom: 0;
 }
 
 /* ***************
@@ -104,7 +85,7 @@ footer {
 #about {
   padding-top: 1em;
   padding-bottom: .5em;
-  background-color: #561D25;
+  background-color: #561D25; /* 561D25 */
   color: #FFFCF5;
   border-bottom: solid 7px #3C141A;
 }
@@ -113,16 +94,17 @@ footer {
   max-width: 40em;
 }
 
-#portrait {
-  float: left;
-  border: 1px #1F2421 solid;
-  margin-right: 1em;
-  margin-bottom: .5em;
-} 
-
 /* ***************
    Projects
    *************** */
+
+#projects {
+  background: linear-gradient(to bottom right, #111, #251834);
+}
+
+#projects .col-12 {
+  max-width: 60em;
+}
 
 #projects .row {
   max-width: 75em;
@@ -130,127 +112,27 @@ footer {
 
 .media img {
   width: 100%;
-  max-width: 200px;
+  max-width: 100px;
   background: #1a1a1a;
-  border-radius: 15px;
+  border-radius: 4px;
 }
 
 #project-list li.media {
   padding: 1em 1.5em;
-  background: #1a1a1a;
+  background: #201c23;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.5);
 }
 
 /* ***************
-   Music
+   Footer
    *************** */
 
-#music {
-  background: #251834;
-  background: linear-gradient(to bottom left, #352844, #251834);
-  padding: 2em 2em 2em 2em;
-  border-bottom: solid 7px #3a2a40;
-  border-top: solid 7px #3a2a40;
+footer {
+  border-top: 7px #111 solid;
 }
 
-#music .row {
-  max-width: 75em;
-}
-
-#music .col-12 {
-  margin-bottom: 2em;
-}
-
-.waveform {
-  height: 85px;
-  border-radius: 3px;
-  filter: drop-shadow(0 0 15px black);
-}
-
-.waveform a:hover {
-  filter: drop-shadow(0 0 15px white);
-}
-
-#music .soundcloud {
-  color: #fff;
-}
-
-.waveform#solar {
-  background: url('../img/music/wave_solar.png') center no-repeat;
-  background-size: cover;
-}
-
-.waveform#random {
-  background: url('../img/music/wave_random.png') center no-repeat;
-  background-size: cover;
-}
-
-.waveform#longcryer {
-  background: url('../img/music/wave_longcryer.png') center no-repeat;
-  background-size: cover;
-}
-
-.waveform#between {
-  background: url('../img/music/wave_between.png') center no-repeat;
-  background-size: cover;
-}
-
-.waveform#telepop {
-  background: url('../img/music/wave_telepop.png') center no-repeat;
-  background-size: cover;
-}
-
-.waveform#sleepy {
-  background: url('../img/music/wave_sleepy.png') center no-repeat;
-  background-size: cover;
-}
-
-/* ***************
-   Resume
-   *************** */
-
-#resume {
-  background: #FFFCF5; /* 153649 */
-  color: #344;
-  padding-top: 1em;
-  min-height: 25em;
-}
-
-#resume .row {
-  max-width: 75em;
-}
-
-.list-group {
-  background: initial;
-  box-shadow: none;
-}
-
-.exp-entry {
-  border-bottom: 1px solid #817f82;
-  padding-bottom: 1px;
-}
-
-a.list-group-item {
-  background: #FFFCF5;
-  color: #565554;
-  border: none;
-}
-
-a.list-group-item:hover {
-  background: initial;
-  color: #eb5055;
-}
-
-div.exp-details {
-  padding: 5px 20px 1px 20px;
-  margin: 5px 0 15px 20px;
-  border-left: 1px dashed #ccc;
-}
-
-div.exp-details span ~ span {
-    margin-left: 5px;
-    border-left: 1px solid #8f8c85;
-    color: #8f8c85;
-    padding-left: 5px;
+footer a {
+  color: white !important;
 }
 
 /* ***************

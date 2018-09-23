@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sean H Fagan</title>
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,39 +20,13 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
-  <body data-spy="scroll" data-target="#nav">
-
-    <div id="nav">
-      <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Sean H Fagan</a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#music">Music</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <a href="mailto:seanfagandesign@gmail.com">seanfagandesign@gmail.com</a>
-          </span>
-        </div>
-      </nav>
-    </div>
-
+  <body>
     <div id="header" class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-auto text-center">
-          <img src="img/shf-white-md.png" alt="SHF signature" title="SHF" id="logo"/>
-          <h1>Sean H Fagan</h1>
-          <em>designer, developer</em>
+          <img id="portrait" class="grayscale mb-2" width="120" height="120" src="img/fagan-portrait-color.jpg" alt="Sean"/>
+          <h1 title="SHF" class="mb-0">Sean H Fagan</h1>
+          <em class="text-lowercase">Designer, Developer</em>
         </div>
       </div>
     </div>
@@ -60,9 +34,8 @@
     <div id="about" class="container-fluid">
       <div class="row">
         <div class="col-12 mx-auto">
-          <img id="portrait" class="float-left grayscale" width="120" height="120" src="img/fagan-portrait-color.jpg" alt="Sean"/>
           <p>
-            Sean lives in Austin, Texas. He was born there too. Sean graduated from the University of Texas at Dallas with a B.A. in Arts and Technology — along the way he studied music composition at the University of North Texas. He now works for yet another Texas university.
+            Sean lives in Austin, Texas. He was born there too. Sean graduated with a B.A. in Arts and Technology — along the way he studied music composition. He now works as a developer in higher education.
           </p>
         </div>
       </div>
@@ -70,38 +43,21 @@
 
     <div id="projects" class="container-fluid">
       <div class="row mx-auto">
-        <div class="col-12">
- 
+        <div class="col-12 mx-auto">
+
           <ul id="project-list" class="list-unstyled">
-            
+
             <li class="media my-4">
               <div class="media-body">
-                <a href="http://www.intersourcecorp.com" target="_blank"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/intersource-showcase.jpg" alt="InterSource"></a>
-                <h5 class="mt-0 mb-1">
-                  <a href="http://www.intersourcecorp.com" target="_blank">InterSource</a>
-                  <small class="text-muted">(Website)</small>
-                </h5>
-                <p class="small text-muted">Solo Project</p>
-                <p>InterSource is a local woodworking business that produces custom furniture for hospitality, corporate, and residential spaces. Their new website is built on Wordpress.</p>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="http://www.intersourcecorp.com" target="_blank">
-                      <i class="fa fa-external-link" aria-hidden="true"></i> Visit the site
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            
-            <li class="media my-4">
-              <div class="media-body">
-                <a href="https://www.stitcher.com/podcast/geeklyinc/yer-a-wizard-harry" target="_blank"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/yawh-showcase.jpg" alt="Yer a Wizard, Harry"></a>
-                <h5 class="mt-0 mb-0">
-                  <a href="https://www.stitcher.com/podcast/geeklyinc/yer-a-wizard-harry" target="_blank">Yer a Wizard, Harry</a>
-                  <small class="text-muted">(Podcast)</small>
-                </h5>
-                <p class="small text-muted">Role: Musician</p>
-                <p><em>Yer a Wizard, Harry</em> is a good-humored podcast where three friends reread the Harry Potter series. The podcast is supported by the success of several Kickstarters. It features the art of <a href="https://www.instagram.com/jexclamationpoint/">Jesse Carlton</a> and original music by Sean Fagan.</p>
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/yawh-showcase.jpg" alt="Yer a Wizard, Harry">
+                  <h5 class="mt-0 mb-0">
+                    <a href="https://www.stitcher.com/podcast/geeklyinc/yer-a-wizard-harry" target="_blank">Yer a Wizard, Harry</a>
+                    <small class="text-muted">(Podcast)</small>
+                  </h5>
+                  <p class="small text-muted">Musician</p>
+                </div>
+                <p><em>Yer a Wizard, Harry</em> is a comedy podcast where three friends reread the Harry Potter series. The podcast is supported by seasonal Kickstarters.</p>
                 <ul class="list-unstyled">
                   <li>
                     <a href="https://www.stitcher.com/podcast/geeklyinc/yer-a-wizard-harry" target="_blank">
@@ -116,16 +72,61 @@
                 </ul>
               </div>
             </li>
-            
+
             <li class="media my-4">
               <div class="media-body">
-                <a href="https://pushandpullgame.wordpress.com/" target="_blank"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/push-and-pull-showcase.jpg" alt="Push and Pull"></a>
-                <h5 class="mt-0 mb-1">
-                  <a href="https://pushandpullgame.wordpress.com/" target="_blank">Push and Pull</a>
-                  <small class="text-muted">(Game)</small>
-                </h5>
-                <p class="small text-muted">Role: Game Mechanics Designer</p>
-                <p>Push and Pull is a sidescrolling platformer where you play a team of misfits with magnetic powers. A team of 30 students built the game in Unity in four months.  The game is available for free download for Windows and Mac.</p>
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/graphics/art/art-elevator.gif" alt="Sleepy Fish">
+                  <h5 class="mt-0 mb-1">
+                    <a href="https://soundcloud.com/sleepyfish" target="_blank">Sleepy Fish</a>
+                    <small class="text-muted">(Music)</small>
+                  </h5>
+                  <p class="small text-muted">Musician</p>
+                </div>
+                <p>Sleepy Fish is an ongoing solo music project. It hasn't won any Grammys, yet. Please share it on all your viral Tweets. Thanks.</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://soundcloud.com/sleepyfish" target="_blank">
+                      <i class="fa fa-soundcloud" aria-hidden="true"></i></i> Listen on SoundCloud
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="media my-4">
+              <div class="media-body">
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/intersource-showcase.jpg" alt="InterSource">
+                  <h5 class="mt-0 mb-1">
+                    <a href="http://www.intersourcecorp.com" target="_blank">InterSource</a>
+                    <small class="text-muted">(Website)</small>
+                  </h5>
+                  <p class="small text-muted">Web developer</p>
+                </div>
+                
+                <p>InterSource is a local woodworking business that produces custom furniture. Their new website is built on Wordpress.</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.intersourcecorp.com" target="_blank">
+                      <i class="fa fa-external-link" aria-hidden="true"></i> Visit the site
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="media my-4">
+              <div class="media-body">
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/push-and-pull-showcase.jpg" alt="Push and Pull">
+                  <h5 class="mt-0 mb-1">
+                    <a href="https://youtu.be/RIKv7x2viSo" data-toggle="lightbox" data-width="1280">Push and Pull</a>
+                    <small class="text-muted">(Game)</small>
+                  </h5>
+                  <p class="small text-muted">Mechanics Designer</p>
+                </div>
+                <p><em>Push and Pull</em> is a sidescrolling platformer where you play a team of magnetic misfits.</p>
                 <ul class="list-unstyled">
                   <li>
                     <a href="https://youtu.be/RIKv7x2viSo" data-toggle="lightbox" data-width="1280">
@@ -140,50 +141,22 @@
                 </ul>
               </div>
             </li>
-            
+
             <li class="media my-4">
               <div class="media-body">
-                <a href="http://www.utdallas.edu/atec/gamelab/returntocolor/" target="_blank"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/return-to-color-showcase.jpg" alt="Return to Color"></a>
-                <h5 class="mt-0 mb-1">
-                  <a href="http://www.utdallas.edu/atec/gamelab/returntocolor/" target="_blank">Return to Color</a>
-                  <small class="text-muted">(Game)</small>
-                </h5>
-                <p class="small text-muted">Role: UI Designer</p>
-                <p>Return to Color is a puzzle platformer where you play as the inhabitants of a computer's graphics card and work to restore color to the system. A team of 14 students built the game in Unity in four months.</p>
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/return-to-color-showcase.jpg" alt="Return to Color">
+                  <h5 class="mt-0 mb-1">
+                    <a href="https://youtu.be/9MBNTHgxZ8M" data-toggle="lightbox" data-width="1280">Return to Color</a>
+                    <small class="text-muted">(Game)</small>
+                  </h5>
+                  <p class="small text-muted">UI Designer</p>
+                </div>
+                <p><em>Return to Color</em> is a puzzle platformer where you are the inhabitants of a computer graphics card and work to restore color to the system.</p>
                 <ul class="list-unstyled">
                   <li>
                     <a href="https://youtu.be/9MBNTHgxZ8M" data-toggle="lightbox" data-width="1280">
                       <i class="fa fa-play-circle" aria-hidden="true"></i> Watch gameplay
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.utdallas.edu/atec/gamelab/returntocolor/" target="_blank">
-                      <i class="fa fa-external-link" aria-hidden="true"></i> Visit the site
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            
-            
-            <li class="media my-4">
-              <div class="media-body">
-                <a href="https://solarrim.wordpress.com/" target="_blank"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/solar-rim-showcase.jpg" alt="Solar Rim"></a>
-                <h5 class="mt-0 mb-1">
-                  <a href="https://solarrim.wordpress.com/" target="_blank">Solar Rim</a>
-                  <small class="text-muted">(Game)</small>
-                </h5>
-                <p class="small text-muted">Role: Composer, Sound Designer</p>
-                <p>Solar Rim is a multiplayer first-person shooter where you compete for resources in a randomly generated asteroid field. A team of 8 students built the game in Unity in four months.</p>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="https://youtu.be/tAyyeKo5sJE" data-toggle="lightbox" data-width="1280">
-                      <i class="fa fa-play-circle" aria-hidden="true"></i> Watch a trailer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://solarrim.wordpress.com/" target="_blank">
-                      <i class="fa fa-external-link" aria-hidden="true"></i> Visit the blog
                     </a>
                   </li>
                 </ul>
@@ -192,13 +165,36 @@
 
             <li class="media my-4">
               <div class="media-body">
-                <a href="#"><img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/fagan-rooftop.jpg" alt="SHF"></a>
-                <h5 class="mt-0 mb-1">
-                  <a href="#">SHF.fyi</a>
-                  <small class="text-muted">(Website)</small>
-                </h5>
-                <p class="small text-muted">Solo Project</p>
-                <p>The personal portfolio site you're viewing! It is a static site built off BootStrap 4 and hosted through GitHub Pages. The design is original.</p>
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/proj/solar-rim-showcase.jpg" alt="Solar Rim">
+                  <h5 class="mt-0 mb-1">
+                    <a href="https://youtu.be/tAyyeKo5sJE" data-toggle="lightbox" data-width="1280">Solar Rim</a>
+                    <small class="text-muted">(Game)</small>
+                  </h5>
+                  <p class="small text-muted">Composer and Sound Designer</p>
+                </div>
+                <p>Solar Rim is a multiplayer first-person shooter. Players compete for resources in a randomly generated asteroid field.</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://youtu.be/tAyyeKo5sJE" data-toggle="lightbox" data-width="1280">
+                      <i class="fa fa-play-circle" aria-hidden="true"></i> Watch the trailer
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="media my-4">
+              <div class="media-body">
+                <div class="clearfix">
+                  <img class="img-fluid float-sm-left mr-sm-3 mb-2" src="img/fagan-rooftop.jpg" alt="SHF">
+                  <h5 class="mt-0 mb-1">
+                    <a href="https://github.com/seanfagan/seanfagan.github.io" target="_blank">shf.fyi</a>
+                    <small class="text-muted">(Website)</small>
+                  </h5>
+                  <p class="small text-muted">Web developer</p>
+                </div>
+                <p>The personal portfolio site you're viewing! It is a static site built with BootStrap 4 and hosted through GitHub Pages. The design is original.</p>
                 <ul class="list-unstyled">
                   <li>
                     <a href="https://github.com/seanfagan/seanfagan.github.io" target="_blank">
@@ -213,176 +209,10 @@
       </div>
     </div>
 
-    <div id="music" class="container-fluid">
-      <div class="row mx-auto">
-        <div class="col-12 text-center">
-          <h2>Music</h2>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <div id="solar" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="146849764">cinematic</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <div id="random" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="142651928">high energy</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <div id="longcryer" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="297476837">orchestral</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <div id="between" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="237042969">tonal</a>
-          </div>
-        </div>
- 
-        <div class="col-12 col-md-6">
-          <div id="telepop" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="19695984">remix</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-          <div id="sleepy" class="waveform d-flex justify-content-center align-items-center">
-            <a class="soundcloud" href="#" onclick="return false" data-track="105132052">experimental</a>
-          </div>
-        </div>
-
-        <div class="col-12 text-center">
-          <p>More on <a href="https://soundcloud.com/sleepyfish" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i> SoundCloud</a></p>
-        </div>
-      </div>
-    </div>
-
-  	<div id="resume" class="container-fluid">
-  		<div class="row mx-auto">
-  			<div class="col-md-6">
-
-          <h2>Work</h2>
-
-					<div class="panel list-group">
-
-            <div class="exp-entry">
-              <a href="#job-ut-sd" class="list-group-item" data-toggle="collapse">
-                Software Developer - The University of Texas
-              </a>
-              <div id="job-ut-sd" class="collapse">
-                <div class="exp-details">
-                  <span>2015 – Present</span>
-  						    <span>Austin, Texas</span>
-                  <p class="description">
-                    Web development with Python / Django and maintenance of Oracle and Mainframe databases.
-                  </p>
-                </div>
-						  </div>
-            </div> <!-- end of Exp Entry -->
-
-            <div class="exp-entry">
-              <a href="#job-dma" class="list-group-item" data-toggle="collapse">
-                Instructor - Digital Media Academy
-              </a>
-              <div id="job-dma" class="collapse">
-                <div class="exp-details">
-                  <span>Summer 2015</span>
-                  <span>Austin, Texas</span>
-                  <p class="description">
-                    Taught summer camps on programming in Java and C# for games and generative art.
-                  </p>
-                </div>
-              </div>
-            </div> <!-- end of Exp Entry -->
-
-            <div class="exp-entry">
-              <a href="#job-utd" class="list-group-item" data-toggle="collapse">
-                CompSci Outreach Instructor - The University of Texas at Dallas
-              </a>
-              <div id="job-utd" class="collapse">
-                <div class="exp-details">
-                  <span>2014 – 2015</span>
-                  <span>Richardson, Texas</span>
-                  <p class="description">
-                    Taught summer camps on learning how to program via A.L.I.C.E and GameMaker.
-                  </p>
-                </div>
-              </div>
-            </div> <!-- end of Exp Entry -->
-
-            <div class="exp-entry">
-              <a href="#job-aspyr" class="list-group-item" data-toggle="collapse">
-                QA Tester - Aspyr Media
-              </a>
-              <div id="job-aspyr" class="collapse">
-                <div class="exp-details">
-                  <span>Summer 2013</span>
-                  <span>Austin, Texas</span>
-                  <p class="description">
-                    Tester on Bioshock: Infinite, Civilization V, and Borderlands 2.
-                  </p>
-                </div>
-              </div>
-            </div> <!-- end of Exp Entry -->
-
-					</div>
-				</div> <!-- end of Work column -->
-
-        <div class="col-md-6">
-
-          <h2>Education</h2>
-
-          <div class="panel list-group">
-
-            <div class="exp-entry">
-              <a href="#edu-utd" class="list-group-item" data-toggle="collapse">
-                B.A. Arts and Technology - The University of Texas at Dallas
-              </a>
-              <div id="edu-utd" class="collapse">
-                <div class="exp-details">
-                  <span>2012 – 2015</span>
-                  <span>Richardson, Texas</span>
-                  <p class="description">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i> B.A. with a focus in game design and user experience/interaction design. Member of Game Production Lab and Tau Sigma NHS.
-                  </p>
-                </div>
-              </div>
-            </div> <!-- end of Exp Entry -->
-
-            <div class="exp-entry">
-              <a href="#edu-unt" class="list-group-item" data-toggle="collapse">
-                Music Composition - The University of North Texas
-              </a>
-              <div id="edu-unt" class="collapse">
-                <div class="exp-details">
-                  <span>2010 – 2012</span>
-                  <span>Denton, Texas</span>
-                  <p class="description">
-                    Focused on music composition. Member of Composers Forum. 
-                  </p>
-                </div>
-              </div>
-            </div> <!-- end of Exp Entry -->
-
-          </div>
-        </div> <!-- end of Education column -->
-			</div> <!-- end of row -->
-		</div>
-    
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <span class="text-muted">
-              &copy; <span id="copyright">2017</span>
-            </span>
-          </div>
-        </div>
-      </div>
+    <footer class="p-3 text-center">
+      <span class="text-muted">
+        <a href="#" id="toTop">Back to top <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      </span>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
