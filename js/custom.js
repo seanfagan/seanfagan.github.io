@@ -26,6 +26,9 @@ $(window).scroll(function() {
   }
 });
 
+$("#toTop").click(function () {
+   $("html, body").animate({scrollTop: 0}, 1000);
+});
 
 $(document).on('click', 'a.soundcloud', function(e) {
   var $link = $(e.target);
