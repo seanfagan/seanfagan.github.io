@@ -26,5 +26,5 @@ $(window).scroll(function() {
 
 /* Back to top animation */
 $("#toTop").click(function () {
-   $("html, body").animate({scrollTop: 0}, 1000);
+   $("html, body").animate({scrollTop: 0}, 500);
 });
