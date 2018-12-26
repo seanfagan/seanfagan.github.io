@@ -145,7 +145,7 @@ footer a {
 }
 
 .ungrayscale {
-  animation: ungrayscale 3s both;
+  animation: ungrayscale 2s both;
 }
 
 @keyframes ungrayscale {
