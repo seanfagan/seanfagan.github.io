@@ -132,17 +132,15 @@ footer a {
    *************** */
 
 .grayscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(100%) contrast(120%);
 }
 
 .ungrayscale {
-  animation: ungrayscale 2s both;
+  animation: ungrayscale 2.5s 1s both;
 }
 
 @keyframes ungrayscale {
   100% {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    filter: grayscale(0%) contrast(100%);
   }
 }
