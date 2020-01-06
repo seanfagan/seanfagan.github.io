@@ -143,11 +143,10 @@ a:active {
    Footer
    *************** */
 
-footer {
-  border-top: 2px #111 solid;
-}
+.footer {
+  padding-bottom: 1rem;}
 
-footer a {
+#toTop {
   color: white !important;
 }
 
