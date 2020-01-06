@@ -13,7 +13,7 @@
 body {
   background-color: #201c23;
   font-family: 'Raleway', sans-serif;
-  color: #FFF5FF;
+  color: #fff5ff;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
@@ -53,9 +53,6 @@ a:active {
   padding: 0;
   overflow-x: hidden;
   background: url('../img/bg-bikes.jpg') bottom center no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -72,11 +69,11 @@ a:active {
 }
 
 #portrait {
-  border: 1px #FFFCF5 solid;
+  border: 1px #fffcf5 solid;
 }
 
 #header h1, #header em {
-  color: #FFFCF5;
+  color: #fffcf5;
   font-family: 'Raleway';
   letter-spacing: 2px;
 }
@@ -102,7 +99,7 @@ a:active {
   padding-top: 1em;
   padding-bottom: .5em;
   background-color: #8c1032;
-  color: #FFFCF5;
+  color: #fffcf5;
   border-bottom: solid 7px #5d000e;
 }
 
@@ -115,7 +112,7 @@ a:active {
    *************** */
 
 #projects {
-  background: linear-gradient(to bottom right, #0A0A0A, #25131d);
+  background: linear-gradient(to bottom right, #0a0a0a, #25131d);
 }
 
 #projects .col-12 {
