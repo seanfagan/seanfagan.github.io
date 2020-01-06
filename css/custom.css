@@ -112,15 +112,18 @@ a:active {
    *************** */
 
 #projects {
-  background: linear-gradient(to bottom right, #0a0a0a, #25131d);
+  background: url('../img/bg-roof.jpg') bottom center no-repeat fixed;
+  background-size: contain;
+  background-attachment: scroll;
+  padding: 0;
+}
+
+#projects .row {
+  background: radial-gradient(farthest-side at 100% 100%, rgba(35,20,30,.6), rgba(30,15,25,1), rgba(14,10,12,1))
 }
 
 #projects .col-12 {
   max-width: 60em;
-}
-
-#projects .row {
-  max-width: 75em;
 }
 
 .media img {
