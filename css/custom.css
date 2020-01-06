@@ -20,8 +20,12 @@ body {
   font-family: 'Lora', serif;
 }
 
-a, a:hover, a:active {
+a, a:hover {
   color: #ff565b !important;
+}
+
+a:active {
+  color: #fff !important;
 }
 
 .text-muted {
