@@ -41,6 +41,10 @@ a:active {
   background: #333;
 }
 
+.socials {
+  font-size: 1.3rem;
+}
+
 /* ***************
    Header
    *************** */
@@ -60,8 +64,11 @@ a:active {
 }
 
 #header .col-12 {
-  padding: 5em 8% 5em 8%;
-  background: rgba(40, 0, 10, 0.75);
+  background: rgba(40, 0, 10, 0.85);
+}
+
+#badge {
+  padding: 5em;
 }
 
 #portrait {
@@ -72,6 +79,19 @@ a:active {
   color: #FFFCF5;
   font-family: 'Raleway';
   letter-spacing: 2px;
+}
+
+.socials a {
+  color: #fffcf5 !important;
+}
+
+.socials a:hover {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.socials a:active {
+  filter: drop-shadow(0 0 5px #ff565b);
+  color: #ff565b !important;
 }
 
 /* ***************
