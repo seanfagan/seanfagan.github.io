@@ -107,6 +107,11 @@ a:active {
   max-width: 40em;
 }
 
+#about a {
+  color: #fffcf5 !important;
+  text-decoration: underline;
+}
+
 /* ***************
    Projects
    *************** */
