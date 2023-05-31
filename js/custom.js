@@ -1,27 +1,21 @@
-window.addEventListener('load', (event) => {
-  /* Grayscale animation */
-  $('.grayscale').addClass("ungrayscale");
-});
+// Toggle collapse button's text
 
-/* Lightbox */
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
+const projCollapse = document.getElementById('projectsCollapse');
+const projCollapseButton = document.getElementById('projectsCollapseButton');
 
-$(window).scroll(function() {
-  /* Header scrolling fade */
-  var scrollY = $(window).scrollTop();
-  
-  var alpha = .5 - scrollY * 0.002;
-  if (alpha > 0) {
-  	$("#header .row").css({
-      "background": "linear-gradient(to bottom right, rgba(45,0,5," + alpha + "), rgba(35,5,60," + alpha + "))",
-  	});
-  }
-});
+projCollapse.addEventListener('hidden.bs.collapse', function() {
+  projCollapseButton.innerText = 'More projects...';
+})
+projCollapse.addEventListener('shown.bs.collapse', function() {
+  projCollapseButton.innerText = 'Less projects...';
+})
 
-/* Back to top animation */
-$("#toTop").click(function () {
-   $("html, body").animate({scrollTop: 0}, 500);
-});
+const gamesCollapse = document.getElementById('gamesCollapse');
+const gamesCollapseButton = document.getElementById('gamesCollapseButton');
+
+gamesCollapse.addEventListener('hidden.bs.collapse', function() {
+  gamesCollapseButton.innerText = 'Favorite games...';
+})
+gamesCollapse.addEventListener('shown.bs.collapse', function() {
+  gamesCollapseButton.innerText = 'Less games please...';
+})
