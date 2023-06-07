@@ -35,3 +35,7 @@ body {
 #reel {
   background: linear-gradient(90deg, #15171a, #1a1d20, #15171a);
 }
+
+h1, .h1 {
+  font-family: 'Krub', sans-serif;
+}
