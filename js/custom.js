@@ -1,5 +1,8 @@
-// Toggle collapse button's text
+// popovers
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+// Toggle project collapse button's text
 const projCollapse = document.getElementById('projectsCollapse');
 const projCollapseButton = document.getElementById('projectsCollapseButton');
 
@@ -10,6 +13,7 @@ projCollapse.addEventListener('shown.bs.collapse', function() {
   projCollapseButton.innerText = 'Less projects...';
 })
 
+// Toggle game collapse button's text
 const gamesCollapse = document.getElementById('gamesCollapse');
 const gamesCollapseButton = document.getElementById('gamesCollapseButton');
 
