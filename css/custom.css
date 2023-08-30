@@ -1,3 +1,18 @@
+/* big picture */
+html {
+  background: url('../img/bg-roof.jpg') bottom center no-repeat scroll;
+  background-size: 100%;
+  background-color: #212529;
+}
+
+body {
+  background: linear-gradient(175deg, rgba(35,45,55,1), rgba(20,25,30,1), rgba(35,20,30,0.9));
+}
+
+h1, .h1 {
+  font-family: 'Krub', sans-serif;
+}
+
 /* video cards */
 .card-img-overlay {
   top: auto;
@@ -18,24 +33,11 @@
   background: #eee;
 }
 
-html {
-  background: url('../img/bg-roof.jpg') bottom center no-repeat scroll;
-  background-size: 100%;
-  background-color: #212529;
-}
-
-body {
-  background: linear-gradient(175deg, rgba(35,45,55,1), rgba(20,25,30,1), rgba(35,20,30,0.9));
-}
-
+/* other */
 #about > * {
   max-width: 60rem;
 }
 
 #reel {
   background: linear-gradient(90deg, #15171a, #1a1d20, #15171a);
-}
-
-h1, .h1 {
-  font-family: 'Krub', sans-serif;
 }
