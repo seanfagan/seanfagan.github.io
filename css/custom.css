@@ -41,3 +41,7 @@ h1, .h1 {
 #reel {
   background: linear-gradient(90deg, #15171a, #1a1d20, #15171a);
 }
+
+#reel > .ratio {
+  max-width: 1000px;
+}
